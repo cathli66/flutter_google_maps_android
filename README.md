@@ -2,7 +2,9 @@
 
 This Flutter demo displays a simple Google Map using Google Map's Android SDK.
 Does not include an API key - generate your own following the instructions here: https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
 You will need to create a Google Cloud account and add your billing information. For demo or any personal use purposes, the credits that Google provides should cover any costs.
+There are multiple ways to configure the API key, but the easiest is to set Application restrictions to None and API restrictions to Maps SDK for Android (and as many others as you need). If you want to set the Application restriction to Android apps, this is more secure but you'll have to provide your app's package name and SHA fingerprint to the Google Cloud Console. These should appear if you try to run the app with the Android Application restriction active.
 
 Then go to android/app/src/main/AndroidManifest.xml and replace YOUR_API_KEY with the API key.
 <meta-data android:name="com.google.android.geo.API_KEY"
@@ -28,6 +30,11 @@ samples, guidance on mobile development, and a full API reference.
 
 Includes information on setting up Flutter environment and Android emulators in Android Studio.
 https://codelabs.developers.google.com/codelabs/google-maps-in-flutter#0
+
+Make sure you also enable Google Play Services in your Android Studio's SDK Tools!
+In Android Studio: Tools (Windows) or Preferences (Mac) -> SDK Manager -> SDK Tools -> check Google Play services -> Apply (downloads or updates the services)
+
+Your Android emulator may also need to support the Google Play store. When creating your emulator, look for a version with the play icon.
 
 ## Other References
 
