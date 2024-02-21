@@ -24,12 +24,12 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-# Basic tutorial on integrating Google Maps to Flutter
+## Basic tutorial on integrating Google Maps to Flutter
 
 Includes information on setting up Flutter environment and Android emulators in Android Studio.
 https://codelabs.developers.google.com/codelabs/google-maps-in-flutter#0
 
-# Other References
+## Other References
 
 Google Maps in Flutter Android Example
 Referenced code to detect and use latest renderer. Solely following the tutorial did not work, likely due to issues with the legacy renderer.
